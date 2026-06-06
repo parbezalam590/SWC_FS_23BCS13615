@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Directory</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main class="directory-shell">
+        <header class="directory-header">
+            <div>
+                <p class="eyebrow">User directory</p>
+                <h1>Team members</h1>
+            </div>
+            <span class="status-pill" id="statusText">Loading...</span>
+        </header>
+
+        <div class="loader" id="loader">
+            <div class="spinner"></div>
+            <p>Fetching users</p>
+        </div>
+
+        <section class="cards-grid" id="userCards" aria-live="polite"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
