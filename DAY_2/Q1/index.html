@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Tabs</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="dashboard-shell">
+        <header class="dashboard-header">
+            <div>
+                <p class="eyebrow">Admin Dashboard</p>
+                <h1>Workspace overview</h1>
+            </div>
+            <button class="action-btn">New report</button>
+        </header>
+
+        <nav class="tab-list" role="tablist" aria-label="Dashboard sections">
+            <button class="tab active" role="tab" aria-selected="true" data-target="overview">Overview</button>
+            <button class="tab" role="tab" aria-selected="false" data-target="details">Details</button>
+            <button class="tab" role="tab" aria-selected="false" data-target="settings">Settings</button>
+        </nav>
+
+        <section class="tab-content">
+            <article class="panel active" id="overview" role="tabpanel">
+                <h2>Overview</h2>
+                <p>This section gives a summary of current activity, usage metrics, and quick access to the most important controls.</p>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Active users</h3>
+                        <p>1,290</p>
+                    </div>
+                    <div class="card">
+                        <h3>Completed tasks</h3>
+                        <p>584</p>
+                    </div>
+                    <div class="card">
+                        <h3>System status</h3>
+                        <p>All systems operational</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="panel" id="details" role="tabpanel" hidden>
+                <h2>Details</h2>
+                <p>Inspect the latest changes, logs, and performance details to keep everything running smoothly.</p>
+                <ul class="detail-list">
+                    <li><strong>Last update:</strong> 12 minutes ago</li>
+                    <li><strong>Open issues:</strong> 8</li>
+                    <li><strong>Data sync:</strong> 99.7% success rate</li>
+                </ul>
+            </article>
+
+            <article class="panel" id="settings" role="tabpanel" hidden>
+                <h2>Settings</h2>
+                <p>Adjust preferences, manage accounts, and configure how the dashboard behaves.</p>
+                <div class="setting-row">
+                    <span>Notifications</span>
+                    <button class="small-btn">Manage</button>
+                </div>
+                <div class="setting-row">
+                    <span>Privacy</span>
+                    <button class="small-btn">Review</button>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
