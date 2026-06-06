@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paginated Product List</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main class="pager-shell">
+        <header class="pager-header">
+            <div>
+                <p class="eyebrow">Browse products</p>
+                <h1>Featured items</h1>
+            </div>
+            <p class="summary" id="summaryText">Showing 1-10 of 50</p>
+        </header>
+
+        <section class="item-grid" id="itemGrid" aria-live="polite"></section>
+
+        <nav class="pagination" aria-label="Pagination">
+            <button class="page-btn" id="prevButton" type="button">Previous</button>
+            <div class="page-numbers" id="pageNumbers"></div>
+            <button class="page-btn" id="nextButton" type="button">Next</button>
+        </nav>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
